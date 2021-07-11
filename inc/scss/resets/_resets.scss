@@ -1,0 +1,50 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: $parent-white;
+  color: $black;
+}
+
+#main {
+  background: $parent-white;
+  color: $black;
+  min-height: calc(100vh - 4px);
+  margin-top: 4px;
+
+  &-alt {
+    margin-top: 100px;
+  }
+
+  @media (min-width: 992px) {
+    min-height: calc(100vh - 10px);
+    margin-top: 10px;
+
+    &-alt {
+      margin-top: 82px;
+    }
+  }
+}
+
+section {
+  padding: 1rem 0;
+
+  @media (min-width: 992px) {
+    padding: 3rem 0 1rem;
+  }
+}
+
+// Colours
+
+.anb {
+  &-shadow {
+    box-shadow: 0.15rem 0.15rem 0.6rem rgba($secondary-colour, 65%);
+
+    &:hover {
+      box-shadow: 0.07rem 0.07rem 0.3rem rgba($secondary-colour, 0.85);
+    }
+  }
+}

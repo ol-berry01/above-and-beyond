@@ -1,0 +1,74 @@
+.colour-bar {
+  height: 4px;
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(18, minmax(0, 1fr));
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+
+  @media (min-width: 768px) {
+    height: 10px;
+  }
+
+  &-item {
+  }
+
+  .num {
+    &-1 {
+      background: #da5329;
+    }
+    &-2 {
+      background: #ed8918;
+    }
+    &-3 {
+      background: #ee743b;
+    }
+    &-4 {
+      background: #ea5927;
+    }
+    &-5 {
+      background: #c03818;
+    }
+    &-6 {
+      background: #a74317;
+    }
+    &-7 {
+      background: #e1b93c;
+    }
+    &-8 {
+      background: #dec634;
+    }
+    &-9 {
+      background: #e2ae4c;
+    }
+    &-10 {
+      background: #fab529;
+    }
+    &-11 {
+      background: #ee9f18;
+    }
+    &-12 {
+      background: #ba7713;
+    }
+    &-13 {
+      background: #255354;
+    }
+    &-14 {
+      background: #acc3b6;
+    }
+    &-15 {
+      background: #008377;
+    }
+    &-16 {
+      background: #909075;
+    }
+    &-17 {
+      background: #3a4024;
+    }
+    &-18 {
+      background: #0d2624;
+    }
+  }
+}
