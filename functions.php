@@ -25,7 +25,7 @@
      * Register Widgets
      */
 
-    function bdac_widgets() {
+    function anb_widgets() {
 
         register_sidebar( array(
             'name'          => 'Footer Left',
@@ -42,7 +42,7 @@
         ) );
     
     }
-    add_action( 'widgets_init', 'bdac_widgets' );
+    add_action( 'widgets_init', 'anb_widgets' );
 
     /**
      * Register Custom Navigation Walker
@@ -52,3 +52,37 @@
     }
 
     add_action( 'after_setup_theme', 'register_navwalker' );
+
+    /**
+     *  Check if ACF is activated
+     */
+    if ( function_exists( 'acf_register_block_type' ) ) {
+        /**
+         * Adding specific ACF action
+         */
+        add_action( 'acf/init', 'register_acf_block_types' );
+    }
+
+    function register_acf_block_types() {
+
+    /**
+     * Content Blocks
+     */
+
+        /**
+         * Carousel Block
+         */
+        acf_register_block_type(
+            array(
+                'name'              => 'about',
+                'title'             => __( 'About' ),
+                'description'       => __( 'About block' ),
+                'render_template'   => 'inc/template-parts/about-block.php',
+                'icon'              => 'info',
+                'keywords'          => array(
+                                        'about',
+                                        'about us'
+                                    )
+                )
+        );
+    }

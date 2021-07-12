@@ -1,0 +1,13 @@
+.anb-button {
+  color: $black;
+  padding: 0.5rem 0.75rem;
+  text-transform: uppercase;
+  border: 2px solid $black;
+  transition: 300ms ease;
+
+  &:hover {
+    background: $black;
+    color: $parent-white;
+    text-decoration: none;
+  }
+}

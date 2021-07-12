@@ -5,18 +5,18 @@
 
     get_header();
 
-    echo '<main id="main">';
-    
-    while( have_posts() ) :
-        the_post();
-        echo '
-        <h1>' . get_the_title() . '</h1>
-        <p>' . get_the_content() . '</p>
-        '; 
-    endwhile;
-    wp_reset_postdata();
-    
-    echo '</main>';
+        echo '<main id="main">';
+        
+            get_header();
+
+                while( have_posts() ) :
+                    the_post();    
+                        the_content();                    
+                endwhile;
+
+            wp_reset_postdata();
+        
+        echo '</main>';
 
     get_footer();
 ?>
