@@ -21,7 +21,7 @@
       <div class="container">
 
         <div class="header-contact">
-          <p class="header-contact-info mb-0"><span>Property Services</span> | <span><strong>Ashford</strong> +44(0)17233 690 799</span> <span><strong>Winchester</strong>+44(0)1962 920 082</span></p>
+          <p class="header-contact-info mb-0"><span>Property Services</span> | <span><strong>Ashford</strong> +44 (0) 17233 690 799</span> <span><strong>Winchester</strong> +44 (0) 1962 920 082</span></p>
         </div>
   
         <nav class="navbar navbar-expand-lg" role="navigation">

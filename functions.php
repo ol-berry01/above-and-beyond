@@ -22,6 +22,29 @@
     add_action( 'after_setup_theme', 'anb_features' );
 
     /**
+     * Register Widgets
+     */
+
+    function bdac_widgets() {
+
+        register_sidebar( array(
+            'name'          => 'Footer Left',
+            'id'            => 'footer_menu_left',
+            'before_title'  => '',
+            'after_title'   => ''
+        ) );
+
+        register_sidebar( array(
+            'name'          => 'Footer Right',
+            'id'            => 'footer_menu_right',
+            'before_title'  => '',
+            'after_title'   => ''
+        ) );
+    
+    }
+    add_action( 'widgets_init', 'bdac_widgets' );
+
+    /**
      * Register Custom Navigation Walker
      */
     function register_navwalker(){
