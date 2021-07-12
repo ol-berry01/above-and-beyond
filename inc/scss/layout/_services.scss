@@ -1,0 +1,68 @@
+.services {
+  width: 100vw;
+
+  .service {
+    color: $parent-white;
+    display: grid;
+    grid-template-areas:
+      "image"
+      "content";
+
+    @media (min-width: 768px) {
+      min-height: 404px;
+      grid-template-areas: "image content";
+      grid-template-columns: 50% 50%;
+    }
+
+    &:nth-child(even) {
+      grid-template-areas:
+        "image"
+        "content";
+
+      @media (min-width: 768px) {
+        grid-template-areas: "content image";
+      }
+    }
+
+    &-img {
+      grid-area: image;
+    }
+
+    &-content {
+      padding: 2.25rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      grid-area: content;
+
+      @media (min-width: 768px) {
+        padding: 0;
+        padding-left: 4.75rem;
+      }
+
+      &-wrapper {
+        display: flex;
+        flex-direction: column;
+      }
+
+      &-title {
+        word-spacing: 100vw;
+      }
+
+      &-description {
+        @media (min-width: 768px) {
+          width: 75%;
+        }
+
+        @media (min-width: 992px) {
+          width: 50%;
+        }
+      }
+
+      a {
+        width: max-content;
+        margin-top: 1.25rem;
+      }
+    }
+  }
+}

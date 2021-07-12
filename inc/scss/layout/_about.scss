@@ -13,10 +13,6 @@
 
   &-img {
     grid-area: image;
-
-    img {
-      width: 100%;
-    }
   }
 
   &-content {
@@ -41,7 +37,6 @@
     }
 
     &-title {
-      margin-bottom: 2.25rem;
       text-transform: uppercase;
       font-weight: 300;
       letter-spacing: 2px;

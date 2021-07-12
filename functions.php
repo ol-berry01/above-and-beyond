@@ -70,7 +70,7 @@
      */
 
         /**
-         * Carousel Block
+         * About Block
          */
         acf_register_block_type(
             array(
@@ -82,6 +82,22 @@
                 'keywords'          => array(
                                         'about',
                                         'about us'
+                                    )
+                )
+        );
+
+        /**
+         * Services Block
+         */
+        acf_register_block_type(
+            array(
+                'name'              => 'services',
+                'title'             => __( 'Services' ),
+                'description'       => __( 'Services block' ),
+                'render_template'   => 'inc/template-parts/services-block.php',
+                'icon'              => 'admin-customizer',
+                'keywords'          => array(
+                                        'services'
                                     )
                 )
         );
