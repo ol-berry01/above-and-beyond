@@ -10,12 +10,12 @@
 
     <div class="container">
         <div class="row">
-            <div class="col-md-6 p-0">
+            <div class="col-md-4 p-0">
                 <div class="contact-wrapper">
                     <div class="contact-content">
-                        <h2 class="contact-title"><?php echo $contact_title; ?></h2>
-                        <p class="lead contact-subtitle"><?php echo $contact_subtitle; ?></p>
-                        <p class="contact-description"><?php echo $contact_description; ?></p>
+                        <h2 class="contact-content-title"><?php echo $contact_title; ?></h2>
+                        <p class="lead contact-content-subtitle"><?php echo $contact_subtitle; ?></p>
+                        <p class="contact-content-description"><?php echo $contact_description; ?></p>
                         <a href="<?php echo $contact_link; ?>" class="anb-button contact-content-button"><i class="bi bi-envelope"></i> <?php echo $contact_button; ?> <i class="bi bi-chevron-right"></i></a>
                     </div>
                 </div>

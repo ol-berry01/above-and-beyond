@@ -3,30 +3,47 @@
   padding: 2rem 15px;
 
   @media (min-width: 768px) {
-    padding: 4.75rem 0;
+    padding: 11.75rem 0;
     display: flex;
     align-items: center;
     justify-content: center;
   }
 
   &-content {
+    &-title {
+      margin-bottom: 1.25rem;
+    }
+
+    &-subtitle {
+      margin-bottom: 2.25rem;
+      text-transform: uppercase;
+    }
+
     &-description {
-      font-size: 0.7rem;
+      margin-bottom: 2.25rem;
+      font-size: 0.8rem;
     }
     &-button {
       background: $black;
       color: $parent-white;
       width: fit-content;
       font-size: 0.8rem;
+      font-weight: 200;
       display: flex;
       align-items: center;
       justify-content: center;
 
+      &:hover {
+        background: $parent-white;
+        color: $black;
+      }
+
       i {
-        font-size: 1.4rem;
+        font-size: 1.8rem;
+        font-weight: 300;
 
         &:first-of-type {
-          margin-right: 0.5rem;
+          margin-right: 0.75rem;
         }
 
         &:last-of-type {
