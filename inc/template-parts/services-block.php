@@ -1,4 +1,4 @@
-<section class="services">
+<section id="services" class="services">
 
     <?php if( have_rows('services_block') ): ?>
         <?php while( have_rows('services_block') ): the_row(); 
