@@ -101,4 +101,20 @@
                                     )
                 )
         );
+
+        /**
+         * Portfolio Block
+         */
+        acf_register_block_type(
+            array(
+                'name'              => 'portfolio',
+                'title'             => __( 'Portfolio' ),
+                'description'       => __( 'Portfolio block' ),
+                'render_template'   => 'inc/template-parts/portfolio-block.php',
+                'icon'              => 'images-alt',
+                'keywords'          => array(
+                                        'portfolio'
+                                    )
+                )
+        );
     }
