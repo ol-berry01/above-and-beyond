@@ -7,6 +7,7 @@
         wp_enqueue_script( 'anb_dist_main', get_template_directory_uri() . '/dist/js/main.js', array(), false, true  );
         // Stylesheets
         wp_enqueue_style( 'anb_fontawesome', '//cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css', NULL, microtime() );
+        wp_enqueue_style( 'anb_bootstrap_icons', '//cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css', NULL, microtime() );
         wp_enqueue_style( 'anb_bootstrap_styles', get_template_directory_uri() . '/dist/css/bootstrap.css', NULL, microtime() );
         wp_enqueue_style( 'anb_main_styles', get_template_directory_uri() . '/dist/css/main.css', NULL, microtime() );
         wp_enqueue_style( 'anb_styles', get_stylesheet_uri(), NULL, microtime() );
@@ -114,6 +115,22 @@
                 'icon'              => 'images-alt',
                 'keywords'          => array(
                                         'portfolio'
+                                    )
+                )
+        );
+
+        /**
+         * Contact Block
+         */
+        acf_register_block_type(
+            array(
+                'name'              => 'contact',
+                'title'             => __( 'Contact' ),
+                'description'       => __( 'Contact block' ),
+                'render_template'   => 'inc/template-parts/contact-block.php',
+                'icon'              => 'email-alt2',
+                'keywords'          => array(
+                                        'contact'
                                     )
                 )
         );

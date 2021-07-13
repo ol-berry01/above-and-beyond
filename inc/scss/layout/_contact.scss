@@ -1,0 +1,38 @@
+.contact {
+  background: #f1efed;
+  padding: 2rem 15px;
+
+  @media (min-width: 768px) {
+    padding: 4.75rem 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &-content {
+    &-description {
+      font-size: 0.7rem;
+    }
+    &-button {
+      background: $black;
+      color: $parent-white;
+      width: fit-content;
+      font-size: 0.8rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      i {
+        font-size: 1.4rem;
+
+        &:first-of-type {
+          margin-right: 0.5rem;
+        }
+
+        &:last-of-type {
+          margin-left: 0.5rem;
+        }
+      }
+    }
+  }
+}
