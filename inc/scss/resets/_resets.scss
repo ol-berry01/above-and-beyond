@@ -35,13 +35,10 @@ img {
   background: $parent-white;
   color: $black;
   min-height: calc(100vh - 4px);
-  margin-top: 4px;
-
-  &-alt {
-    margin-top: 100px;
-  }
+  margin-top: 96px;
 
   @media (min-width: 992px) {
+    margin-top: 4px;
     min-height: calc(100vh - 10px);
     margin-top: 10px;
 

@@ -88,6 +88,22 @@
         );
 
         /**
+         * Hero Block
+         */
+        acf_register_block_type(
+            array(
+                'name'              => 'hero',
+                'title'             => __( 'Hero' ),
+                'description'       => __( 'Hero block' ),
+                'render_template'   => 'inc/template-parts/hero-block.php',
+                'icon'              => 'info',
+                'keywords'          => array(
+                                        'hero'
+                                    )
+                )
+        );
+
+        /**
          * Services Block
          */
         acf_register_block_type(

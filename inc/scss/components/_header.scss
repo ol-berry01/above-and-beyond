@@ -1,9 +1,19 @@
 .header {
-  background: rgba($black, 0.8);
+  background: rgba($black, 1);
   height: auto;
 
   @media (min-width: 992px) {
+    background: rgba($black, 0.8);
+    height: 160px;
+    align-items: center;
+    justify-content: flex-end;
+    padding-bottom: 15px;
+  }
+
+  @media (min-width: 1560px) {
     height: 220px;
+    padding-top: 40px;
+    justify-content: center;
   }
 
   .container {
@@ -25,8 +35,13 @@
       font-size: 0.8rem;
       justify-content: flex-end;
       position: absolute;
-      top: -35px;
+      top: 20px;
       right: 15px;
+    }
+
+    @media (min-width: 1560px) {
+      top: 20px;
+      right: calc(((100vw - 1560px) / 2) + 15px);
     }
 
     &-info {
