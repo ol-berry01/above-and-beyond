@@ -13,7 +13,9 @@
                 <div class="row">
 
                     <div class="footer-content footer-content-menu col-md-12 col-lg-1 mb-3 mb-lg-0 px-0 text-center text-lg-left">
-                        <?php anbMLogo(56); ?>
+                        <a href="<?php echo esc_url( home_url( '/' ) ); ?>">
+                            <?php anbMLogo(56); ?>
+                        </a>
                     </div>
 
 
@@ -32,18 +34,18 @@
                     <p>Follow us</p>
 
                         <ul class="footer-content-social mb-0">
-                            <li class="footer-content-social-instagram">
-                                <a href="#">
-                                </a>
-                            </li>
-                            <li class="footer-content-social-linkedin">
-                                <a href="#">
-                                </a>
-                            </li>
-                            <li class="footer-content-social-facebook">
-                                <a href="#">
-                                </a>
-                            </li>
+                            <a href="#">
+                                <li class="footer-content-social-instagram">
+                                </li>
+                            </a>
+                            <a href="#">
+                                <li class="footer-content-social-linkedin">
+                                </li>
+                            </a>
+                            <a href="#">
+                                <li class="footer-content-social-facebook">
+                                </li>
+                            </a>
                         </ul>
                     </div>
                 </div>
